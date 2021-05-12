@@ -207,7 +207,8 @@ if game.PlaceID == 54865335 then
 	Load.Text = "Load CarHub for: "..game.Name
 elseif game.PlaceID == 3351674303 then
 	Load.Text = "Load CarHub for: Driving Empire"
-else Load.Text = "Sorry, this game isn't compatible! Join dsc.gg/ a3trmMsU7C to see the list of compatible games!"
+else
+    Load.Text = "Sorry, this game isn't compatible! Join dsc.gg/ a3trmMsU7C to see the list of compatible games!"
 end
 
 Load.MouseButton1Click:Connect(function()
@@ -215,5 +216,7 @@ Load.MouseButton1Click:Connect(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/KPRAAHUE/ultimate-driving-af/main/README.md"))()
     elseif game.PlaceID == 3351674303 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/KPRAAHUE/driving-empire-autofarm2/main/README.md"))()
-    else print("Error 201: The game doesn't have a script!")
-end
+    else
+        print("Error 201: The game doesn't have a script!")
+    end
+end)
